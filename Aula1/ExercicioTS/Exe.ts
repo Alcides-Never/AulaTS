@@ -9,13 +9,16 @@ import { Exercicio4 } from "./ModuloExe4";
 import { Exercicio5 } from "./ModuloExe5";
 import { Exercicio6 } from "./ModuloExe6";
 import { Exercicio7 } from "./ModuloExe7";
+import { Exercicio8 } from "./ModuloExe8";
+import { Exercicio9 } from "./ModuloExe9";
+import { Exercicio10 } from "./ModuloExe10";
 
 let resposta: string;
 
 do{
     console.log("Bem vindo ao menu de exercício")
 
-    resposta = prompt("Digite um numero de 1 à 6, para escolher um exercício ou 'sair' para interromper o programa: ")
+    resposta = prompt("Digite um numero de 1 à 10, para escolher um exercício ou 'sair' para interromper o programa: ")
 
     switch (resposta) {
         case "1":
@@ -46,7 +49,19 @@ do{
             console.log("Você escolheu o exercício 7")
             Exercicio7()
             break;
-            
+        case "8":
+            console.log("Você escolheu o exercício 8")
+            Exercicio8()
+            break;
+        case "9":
+            console.log("Você escolheu o exercício 9")
+            Exercicio9()
+            break; 
+        case "10":
+            console.log("Você escolheu o exercício 10")
+            Exercicio10()
+            break; 
+
         case "sair":
             console.log("")
             break;

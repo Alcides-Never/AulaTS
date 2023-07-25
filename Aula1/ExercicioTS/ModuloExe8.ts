@@ -3,11 +3,14 @@
 // idade e mostre uma mensagem quando a idade do usuário for
 // maior que 18.
 
-export Exercicio8(){
+import promptSync from "prompt-sync"
+let prompt = promptSync()
+
+export function Exercicio8(){
 
     let idade: number = parseInt(prompt("Informe a idade: "))
     
-    while (idade <= 18){ 
+    while (idade < 18){ 
         idade = parseInt(prompt("Informe a idade: "))
     }
     
